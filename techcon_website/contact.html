@@ -16,9 +16,15 @@
       color: #ffffff;
       padding: 1em 2em;
     }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1em;
+    }
     nav a {
       color: #ffffff;
-      margin-right: 1em;
       text-decoration: none;
     }
     nav a:hover {
@@ -89,14 +95,16 @@
 </head>
 <body>
   <header>
-  <h1>Contact Us</h1>
-  <nav aria-label="Main Navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="schedule.html">Schedule</a>
-    <a href="register.html">Register</a>
-  </nav>
-</header>
+    <h1>Contact Us</h1>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <section class="contact-info">
@@ -138,7 +146,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2024 TechCon. All rights reserved. Copyright.</p>
+    <p><small>&copy; <time datetime="2024">2024</time> TechCon. All rights reserved. Copyright.</small></p>
   </footer>
 </body>
 </html>
